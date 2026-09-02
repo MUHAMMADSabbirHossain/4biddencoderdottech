@@ -2,7 +2,14 @@
   "name": "@poster-parlor-api/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "npx nx run api:serve:development --no-inspect",
+    "build": "npx nx build api",
+    "start": "npx nx run api:serve:production --no-inspect",
+    "lint": "npx nx lint api",
+    "format": "npx nx format:write",
+    "clear": "npx nx reset && rm -rf dist node_modules && npm install"
+  },
   "private": true,
   "dependencies": {
     "@nestjs/common": "^11.0.0",

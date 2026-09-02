@@ -14,7 +14,18 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "strict": false,
-    "paths": {}
+    "paths": {
+      "@poster-parlor-api/auth": ["./libs/auth/src/index.ts"],
+      "@poster-parlor-api/database": ["./libs/database/src/index.ts"],
+      "@poster-parlor-api/utils": ["./libs/utils/src/index.ts"],
+      "@poster-parlor-api/inventory": ["./libs/inventory/src/index.ts"],
+      "@poster-parlor-api/order": ["./libs/order/src/index.ts"],
+      "@poster-parlor-api/models": ["./libs/models/src/index.ts"],
+      "@poster-parlor-api/config": ["./libs/config/src/index.ts"],
+      "@poster-parlor-api/logger": ["./libs/logger/src/index.ts"],
+      "@poster-parlor-api/admin": ["./libs/admin/src/index.ts"],
+      "@poster-parlor-api/shared": ["./libs/shared/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
